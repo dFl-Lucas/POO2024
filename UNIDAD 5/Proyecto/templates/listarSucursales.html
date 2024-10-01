@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block titulo %}Sucursales{% endblock %}
+
+{% block contenido %}
+    <h1> Sucursales de LogiPack </h1>
+    <form action="{{ request.path }}" method="POST">
+        <div class="form-group">
+            {% if sucursales is not none :%}
+                <select id="sucursales" name="sucursales" class="form-control">
+                {% for sucursal in sucursales :%}
+                    <option value ="{{ sucursal.id }}"> N°: {{ sucursal.numero}}  -  Provincia: {{ sucursal.provincia }}  -  Localidad: {{sucursal.localidad}}  -  Direccion: {{sucursal.direccion}}</option>
+                {% endfor %}			
+                </select>
+                <br><br>
+                <input class="btn btn_primary" type="submit" value="Aceptar">
+            {% endif %}
+        </div>
+    </form>
+{% endblock %}

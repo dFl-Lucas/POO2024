@@ -1,0 +1,125 @@
+/* General Styles */
+/* Header */
+body .container {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding-top: 40px;
+    min-height: 70px;
+    border-bottom: #218629 3px solid;
+    text-indent: 70px;
+    margin: auto;
+    overflow: hidden; /* Corta el contenido en caso de desbordarse del contenedor */
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    text-align: left; 
+    margin: 0;
+    padding: 0;
+    text-indent: 70px;
+}
+
+/*.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}*/
+
+body .container a {
+    color: #ffffff;
+    text-decoration: none; /* Con estoe elimino el subrayado que trae por defecto los enlaces */
+    text-transform: uppercase; /* Transforma todo a mayuscula */
+    font-size: 16px;
+}
+
+body .container ul {
+    padding: 0;
+    list-style: none; /* con esta propieda se elimina el puntito que se genera al crear una lista */
+}
+
+body .container li {
+    float: left;
+    display: inline; /* Con esto hago que los elementos de la lista se pongan uno al lado de otro */
+    padding: 0 20px 0 20px;
+}
+
+body #branding {
+    float: left; /* se posiciona a la izquierda */
+    padding-left: 70px;
+}
+
+body .container nav {
+    float: right; /* se posiciona a la derecha */
+    margin-top: 10px;
+    padding-right: 70px;
+}
+
+header .highlight, header .currrent a {
+    color: #2cbe38;
+    font-weight: bold;
+}
+
+h1 {
+    color: #2cbe38;
+    font-size: 30px;
+}
+
+.titulo {
+    font-size: 36px;
+}
+
+.aviso {
+    color: #ffffff;
+    font-size: 25px;
+}
+
+body a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: auto;
+    padding: 10px;
+    border: 1px solid #444444;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #2cbe38;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+.btn:hover {
+    background-color: #218629;
+}
+
+footer {
+    background: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-top: #218629 3px solid;
+}
+
+

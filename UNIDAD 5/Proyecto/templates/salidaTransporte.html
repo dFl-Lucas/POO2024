@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block titulo %}LogiPack{% endblock %}
+
+{% block contenido %}
+    <h1> Transportes y Paquetes de LogiPack </h1>
+    <form action="{{ request.path }}" method="POST">
+
+        {% if sucursales is not none and paquetes is not none:%}
+            <div class="form-group">
+                <select id="sucursales" name="sucursales" class="form-control">
+                {% for sucursal in sucursales :%}
+                    <option value ="{{ sucursal.id }}"> N°: {{ sucursal.numero}}  -  Provincia: {{ sucursal.provincia }}  -  Localidad: {{sucursal.localidad}}  -  Direccion: {{sucursal.direccion}}</option>
+                {% endfor %}			
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="paquetes"> Paquetes </label>
+                {% for paquete in paquetes %}
+                    <br>
+                    <div>
+                        <input type="checkbox" multiple id="paquetes"  class="custom-checkbox"   name="paquetes" value="{{paquete.id}}">
+                        <label for="paquetes"> Id: {{ paquete.id }}  -  Numero de envio:{{ paquete.numeroenvio }}  -  Direccion del Destinatario:{{ paquete.dirdestinatario }}</label>
+                    </div>
+                {% endfor %}
+            </div>
+            <br><br>
+            <input class="btn btn_primary" type="submit" value="Registrar Transporte">
+        {% endif %}
+    </form>
+{% endblock %}

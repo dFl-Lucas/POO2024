@@ -1,0 +1,38 @@
+import numpy as np
+import csv
+
+class Gestor:
+    __cant = int
+    __dimension = int
+    __incremento = int
+    __ArregloX = np.ndarray
+
+    def __init__(self, dim=21):
+        self.__cant = 0
+        self.__dimension = dim
+        self.__incremento = 5
+        self.__ArregloX = np.empty(self.__dimension, dtype='''aca va la clase del objeto''')
+
+    def agregarX(self, unclase):
+        if self.__dimension == self.__cant:
+            self.__dimension += self.__incremento
+            self.__ArregloMovimientos.resize(self.__dimension)
+        self.__ArregloMovimientos[self.__cant]=unclase
+        self.__cant += 1
+    
+    def carga(self):
+        archivo = open('X.csv','r')
+        reader = csv.reader(archivo, delimiter=';')
+        band = True
+        for fila in reader:
+            if band == True:
+                band = not band
+            else:
+                unM = M(int(fila[0]), fila[1], fila[2], fila[3], float(fila[4]))
+                self.agregarX(unM)
+        print('Carga de  satisfactoria')
+        archivo.close()
+
+    def mostrar(self):
+        for i in range(len(self.__ArregloX)):
+            print('{}'.format(self.__ArregloX[i]))

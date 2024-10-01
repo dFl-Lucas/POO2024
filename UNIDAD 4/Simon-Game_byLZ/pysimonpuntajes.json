@@ -1,0 +1,50 @@
+{
+    "__class__": "GestorJugador",
+    "Jugador": [
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "Jugador": "DUKI",
+                "Fecha": "21/6/2024",
+                "Hora": "1:57:2",
+                "Puntaje": 45
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "Jugador": "ezy",
+                "Fecha": "18/6/2024",
+                "Hora": "16:50:1",
+                "Puntaje": 21
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "Jugador": "prueba",
+                "Fecha": "18/6/2024",
+                "Hora": "16:51:47",
+                "Puntaje": 10
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "Jugador": "luca",
+                "Fecha": "18/6/2024",
+                "Hora": "16:31:37",
+                "Puntaje": 3
+            }
+        },
+        {
+            "__class__": "Jugador",
+            "__atributos__": {
+                "Jugador": "Lucas22",
+                "Fecha": "24/6/2024",
+                "Hora": "11:44:54",
+                "Puntaje": 36
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block titulo %}Transportes{% endblock %}
+
+{% block contenido %}
+    <h1> Transportes de LogiPack </h1>
+    <form action="{{ request.path }}" method="POST">
+        <div class="form-group">
+            {% if transportes is not none:%}
+                <label for="transportes"> Transportes </label>
+                <select id="transportes" name="transportes" class="form-control">
+                {% for transporte in transportes :%}
+                    <option value ="{{ transporte.id }}"> N°: {{ transporte.numerotransporte }}  -  Fecha de Salida: {{ transporte.fechahorasalida }}</option>
+                {% endfor %}			
+                </select>
+                <br><br>
+                <input class="btn btn_primary" type="submit" value="Registrar Llegada">
+            {% endif %}
+        </div>
+    </form>
+{% endblock %}

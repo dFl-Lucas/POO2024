@@ -1,0 +1,17 @@
+        rect1 = tk.Canvas(self.__ventanaJuego, bg="#009000", relief='raised', width=120, height=120)
+        rect1.grid(row=1, column=0, **opts)
+        rect2 = tk.Canvas(self.__ventanaJuego, bg="#ffff00", relief='raised', width=120, height=120)
+        rect2.grid(row=1, column=1, **opts)
+        rect3 = tk.Canvas(self.__ventanaJuego, bg='#ff0000', relief='raised', width=120, height=120)
+        rect3.grid(row=2, column=0, **opts)
+        rect4 = tk.Canvas(self.__ventanaJuego, bg='#0000ff', relief='raised', width=120, height=120)
+        rect4.grid(row=2, column=1, **opts)
+
+        boton1 = tk.Button(self.__ventanaJuego, relief='raised')
+        boton1.grid(row=1, column=0, sticky='nswe')
+        boton2 = tk.Button(self.__ventanaJuego, bg="#ffff00", relief='raised')
+        boton2.grid(row=1, column=1, sticky='nswe')
+        boton3 = tk.Button(self.__ventanaJuego, bg='#ff0000', relief='raised')
+        boton3.grid(row=2, column=0, sticky='nswe')
+        boton4 = tk.Button(self.__ventanaJuego, bg='#0000ff', relief='raised')
+        boton4.grid(row=2, column=1, sticky='nswe')'
